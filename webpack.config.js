@@ -37,12 +37,12 @@ module.exports = {
         }
     },
     output: {
-        path: path.resolve(__dirname, '/dist/'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, './index.html')
+            template: path.resolve(__dirname, 'index.html')
         })
     ],
     devServer: {
