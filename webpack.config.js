@@ -1,6 +1,6 @@
+const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
 
 module.exports = {
     entry: path.resolve(__dirname, './src/index.js'),
@@ -9,8 +9,7 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: [
-                    /node_modules/,
-                    /.vscode/
+                    /node_modules/
                 ],
                 use: ['babel-loader']
             },
@@ -43,7 +42,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, './src/index.html')
+            template: path.resolve(__dirname, './index.html')
         })
     ],
     devServer: {
