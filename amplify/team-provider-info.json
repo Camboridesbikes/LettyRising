@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lettyrising-dev-224001-authRole",
+      "UnauthRoleArn": "arn:aws:iam::752526965972:role/amplify-lettyrising-dev-224001-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::752526965972:role/amplify-lettyrising-dev-224001-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-lettyrising-dev-224001-deployment",
+      "UnauthRoleName": "amplify-lettyrising-dev-224001-unauthRole",
+      "StackName": "amplify-lettyrising-dev-224001",
+      "StackId": "arn:aws:cloudformation:us-west-2:752526965972:stack/amplify-lettyrising-dev-224001/d8d9eb00-4f20-11eb-997a-06a27da41c23",
+      "AmplifyAppId": "d3dmawoy4x1xa1"
+    }
+  }
+}
