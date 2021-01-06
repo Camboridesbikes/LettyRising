@@ -28,7 +28,15 @@ module.exports = {
             },
             {
                 test: /\.(css)$/i,
-                use: ['style-loader', 'css-loader']
+                use: [
+                    'css-modules-typescript-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true
+                        }
+                    }
+                ]
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -37,7 +45,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx'],
+        extensions: ['*', '.ts', '.tsx', '.js', '.jsx'],
         fallback: {
             crypto: require.resolve("crypto-browserify"),
             stream: require.resolve("stream-browserify")
