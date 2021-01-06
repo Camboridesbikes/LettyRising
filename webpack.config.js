@@ -14,6 +14,13 @@ module.exports = {
                 use: ['babel-loader']
             },
             {
+                test:/\.(ts|tsx)$/,
+                exclude: [
+                    /node_modules/
+                ],
+                use: 'ts-loader'
+            },
+            {
                 test: /\.m?js/,
                 resolve: {
                   fullySpecified: false
@@ -46,6 +53,6 @@ module.exports = {
         })
     ],
     devServer: {
-        contentBase: path.resolve(__dirname, './dist')
+        contentBase: path.resolve(__dirname, 'dist')
     }
 };
