@@ -10,14 +10,9 @@ import styles from './index.scss';
 interface Props {}
 
 const Index = (props : Props) => {
-
-    const Src = (url : string) => {
-        return require(url);
-    }
-
     return (
     <> 
-    <BackgroundImage bgStyle={`${styles.splash}`} innerStyle={`${styles.inner}`} fluid={Src('C:/Users/hatte/Desktop/LettySite/LettyRising/src/pages/Index/splashImage.jpg')}>
+    <BackgroundImage bgStyle={`${styles.splash}`} innerStyle={`${styles.inner}`} fluid="https://via.placeholder.com/500.png">
         
             <div>
                 <h1>Welcome to Applied Montessori</h1>
