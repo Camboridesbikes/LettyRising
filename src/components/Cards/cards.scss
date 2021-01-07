@@ -1,0 +1,106 @@
+@use '../../styles/modules/breakpoints' as *;
+
+.CardDeck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 70%;
+    padding: 6%;
+}
+
+.picCard {
+    float: left;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.2s linear;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.99;
+    object-fit: cover;
+    border:1px solid teal; /* for visiblity */
+    clear:both;
+    // overflow: hidden;
+}
+// .picCard::after,
+// .picCard::before {
+//     content: "";
+//     display: table;
+// }
+// .picCard::after{
+//     clear:both;
+// }
+
+.picCard a {
+    display: block;
+    width: 100%;    
+    padding-bottom: 100%;
+
+}
+
+div.picCard div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // color: white;
+    /* background-color: #00000035; */
+    background-color: #00000090;
+    transition-duration: 1s;
+    transition: font-size 0s liner 1s, background-color 1s, scale 1s linear;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+    /* width: fit-content; */
+}
+// div.picCard div::before{
+//     content: "";
+//     display: table;
+// }
+// div.picCard div::after{
+//     clear: both;
+// }
+
+div.picCard div .title {
+    font-size: 2.5em;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: color 1s, linear;
+}
+div.picCard:hover {
+
+    transform: scale(1.1);
+}
+div.picCard div:hover {
+    /* background-color: #00000080; */
+    background-color: #00000035;
+
+}
+@include sm() {
+    .CardDeck {
+        padding: 1em;
+
+    }
+
+    .picCard {
+        margin: 1.61%;
+    }
+}
+@include md() {
+
+    .CardDeck {
+        font-size: 100%;
+    }
+
+    .picCard {
+        padding: 1.61%;
+        width: 40%;
+    }
+}

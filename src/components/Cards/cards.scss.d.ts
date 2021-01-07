@@ -2,11 +2,8 @@
 // Please do not change this file!
 interface CssExports {
   'CardDeck': string;
-  'inner': string;
   'picCard': string;
-  'splash': string;
   'title': string;
-  'whoWeAre': string;
 }
 export const cssExports: CssExports;
 export default cssExports;
