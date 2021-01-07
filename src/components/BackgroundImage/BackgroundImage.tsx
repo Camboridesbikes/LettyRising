@@ -1,14 +1,23 @@
 import React, {FunctionComponent} from 'react'
 
+import styles from './BackgroundImage.scss'
+
 interface Props {
     fluid : string;
-    className? : string;
+    bgStyle? : string;
+    innerStyle? : string;
 }
 
-const BackgroundImage : FunctionComponent<Props> = ({fluid, className, children}) => {
+const BackgroundImage : FunctionComponent<Props> = ({fluid, bgStyle, innerStyle, children}) => {
+
+   //how can I make this more modular? how can I decide the style for this component by passing a clasname? do I need to give up on using modules?
+
     return (
-        <div className={`${className}`} style={{width: '100%', backgroundImage: `url('${fluid}')`, backgroundSize: 'cover', objectPosition: '50% 35%', position: 'absolute', backgroundRepeat: 'no-repeat'}} >
+        <div className={`${styles.background} ${bgStyle}`} style={{backgroundImage: `url('${fluid}')`}} >
+            <div className={`${styles.inner} ${innerStyle}`}>
             {children}
+            </div>
+            
         </div>
     )
 }
