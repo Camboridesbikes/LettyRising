@@ -1,12 +1,13 @@
 @use '../../styles/modules/breakpoints' as *;
 
 .CardDeck {
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     font-size: 70%;
-    padding: 6%;
+
 }
 
 .picCard {
@@ -85,22 +86,24 @@ div.picCard div:hover {
 }
 @include sm() {
     .CardDeck {
-        padding: 1em;
+        width: 90%;
 
     }
 
     .picCard {
         margin: 1.61%;
     }
+    .picCard {
+        padding: 1.61%;
+        width: 40%;
+    }
 }
 @include md() {
 
     .CardDeck {
         font-size: 100%;
+        width: 70%;
     }
 
-    .picCard {
-        padding: 1.61%;
-        width: 40%;
-    }
+    
 }
