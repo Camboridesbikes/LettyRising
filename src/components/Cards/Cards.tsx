@@ -35,12 +35,11 @@ export const LinkCard : FunctionComponent<CardProps> = ({fluid, title, square, P
 }
 
 interface DeckProps{
-    Width? : string;
 }
 
-export const CardDeck : FunctionComponent<DeckProps> = ({Width, children, }) => {
+export const CardDeck : FunctionComponent<DeckProps> = ({ children }) => {
     return (
-        <div className={`${styles.CardDeck}`} style={{width: Width }}>
+        <div className={`${styles.CardDeck}`} >
             {children}
         </div>
     )

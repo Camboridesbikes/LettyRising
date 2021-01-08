@@ -49,7 +49,7 @@ const Index = (props : Props) => {
   * TODO: change the conatining div into a cardBlck clas and manipulate in sass
   */}
 
-    <CardDeck Width='80%'>
+    <CardDeck >
         <LinkCard fluid="https://via.placeholder.com/500.png" title="Online Mentoring and Coaching" square/>
         <LinkCard fluid="https://via.placeholder.com/500.png" title="Online Mentoring and Coaching" square/>
         <LinkCard fluid="https://via.placeholder.com/500.png" title="Online Mentoring and Coaching" square/>
