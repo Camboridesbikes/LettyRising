@@ -22,7 +22,6 @@
     position: relative;
     opacity: 0.99;
     object-fit: cover;
-    border:1px solid teal; /* for visiblity */
     clear:both;
     // overflow: hidden;
 }
@@ -86,7 +85,7 @@ div.picCard div:hover {
 }
 @include sm() {
     .CardDeck {
-        width: 90%;
+        width: 95%;
 
     }
 
