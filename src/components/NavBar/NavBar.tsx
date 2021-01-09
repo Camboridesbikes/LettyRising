@@ -27,7 +27,7 @@ const NavBar = (props: Props) => {
                     <NavLink to=''>What I Do</NavLink>
                 </h4>
                 <h4 className={styles.link}>
-                    <NavLink to=''>Connect</NavLink>
+                    <NavLink to='/connect'>Connect</NavLink>
                 </h4>
                 </div>
                 

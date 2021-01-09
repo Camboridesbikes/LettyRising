@@ -64,9 +64,11 @@ form input {
 .nav h3{
     color: #fff;
 }
-.nav a{
-    line-height: 1.7em;
+.nav p{
+    line-height: 1.4em;
     font-weight: 500;
+    padding-left: 2em;
+    margin: 0;
 }
 
 @include sm(){
@@ -93,8 +95,8 @@ form input {
         margin-bottom: 2em;
     }
 
-    .nav a{
-        line-height: 2em;
+    .nav p{
+        line-height: 1.8em;
         font-weight: 550;
     }
     

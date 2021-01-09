@@ -37,7 +37,7 @@ email? : string;
 phone? : string;
 }
 
-export const Contact : FunctionComponent<ContactProps> = ({email, phone}) => {
+export const ContactInfo : FunctionComponent<ContactProps> = ({email, phone}) => {
     return(
         <div className={styles.col_sm}>
             <h3>Contact Us</h3>
