@@ -13,7 +13,7 @@ interface Props {}
 const Index = (props : Props) => {
     return (
     <> 
-    <BackgroundImage bgStyle={`${styles.splash}`} innerStyle={`${styles.inner}`} fluid="https://via.placeholder.com/500.png">
+    <BackgroundImage bgStyle={`${styles.splash}`} innerStyle={`${styles.inner}`} fluid={require('./imgs/splashImage.jpg')}>
         
             <div>
                 <h1>Welcome to Applied Montessori</h1>
@@ -35,7 +35,7 @@ const Index = (props : Props) => {
   </div>
 
     {/* Who We are block */}
-  <BackgroundImage bgStyle={`${styles.whoWeAre}`} innerStyle={`${styles.inner}`} fluid="https://via.placeholder.com/500.png">
+  <BackgroundImage bgStyle={`${styles.whoWeAre}`} innerStyle={`${styles.inner}`} fluid={require('./imgs/stock-photo-planting-young-tree-by-kid-hand-on-back-soil-as-care-and-save-wold-concept-302422220.jpg')}>
       <div style={{padding: `5%`, color: `white`}}>
         <h1>Who We Are</h1>
         <h3 style={{fontSize: '1.5em', lineHeight: `1.5em`, maxWidth: '1000px'}}>{'content.whoText'}</h3>
@@ -50,10 +50,10 @@ const Index = (props : Props) => {
   */}
 
     <CardDeck >
-        <LinkCard fluid="https://via.placeholder.com/500.png" title="Online Mentoring and Coaching" square/>
-        <LinkCard fluid="https://via.placeholder.com/500.png" title="Online Mentoring and Coaching" square/>
-        <LinkCard fluid="https://via.placeholder.com/500.png" title="Online Mentoring and Coaching" square/>
-        <LinkCard fluid="https://via.placeholder.com/500.png" title="Online Mentoring and Coaching" square/>
+        <LinkCard fluid={require('./imgs/checkeredBoard.jpg')} title="Online Mentoring and Coaching" square/>
+        <LinkCard fluid={require('./imgs/parentCoaching.jpg')} title="Online Mentoring and Coaching" square/>
+        <LinkCard fluid={require('./imgs/profDevWorkshops.jpg')} title="Online Mentoring and Coaching" square/>
+        <LinkCard fluid={require('./imgs/schoolLeadership.jpg')} title="Online Mentoring and Coaching" square/>
     </CardDeck>
     </>
 )
