@@ -40,7 +40,7 @@ phone? : string;
 export const ContactInfo : FunctionComponent<ContactProps> = ({email, phone}) => {
     return(
         <div className={styles.col_sm}>
-            <h3>Contact Us</h3>
+            <h3>Contact</h3>
             <p style={{margin: `0`}}>{email}</p>
             <p style={{margin: `0`}}>{phone}</p>
         </div>
