@@ -5,6 +5,8 @@ interface CssExports {
   'connect': string;
   'inner': string;
   'role': string;
+  'textAreaInput': string;
+  'textInput': string;
 }
 export const cssExports: CssExports;
 export default cssExports;

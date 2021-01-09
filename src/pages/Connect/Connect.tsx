@@ -11,6 +11,14 @@ interface Props {
     
 }
 
+
+/**
+ * TODO: make this contact form more module
+ * 
+ * TODO: add custom textarea and checkbox styles
+ * 
+ */
+
 const Connect = (props: Props) => {
     return (
         <BackgroundImage bgStyle={styles.connect} innerStyle={styles.inner} fluid={require("./stock-photo-hands-holding-seedling-in-eggshells-montessori-education-csr-social-responsibility-eco-green-740429215.jpg")} objectPosition="50% 50%">
@@ -24,10 +32,10 @@ const Connect = (props: Props) => {
 
           <div style={{margin: '1.5em 0'}}>
             <p>
-              <label htmlFor="name">Name: <input type="text" name='name' /></label>
+              <label htmlFor="name">Name: <input className={styles.textInput} type="text" name='name' /></label>
             </p>
             <p>
-              <label htmlFor="email">Email: <input type="email" name='email' /></label>
+              <label htmlFor="email">Email: <input className={styles.textInput} type="email" name='email' /></label>
             </p>
           </div>
 
@@ -51,10 +59,6 @@ const Connect = (props: Props) => {
             <p><label htmlFor="schoolPackage"> <input type="checkbox" name="schoolPackage" id="" /> School Package
               </label></p>
           </div>
-          {/**
-           *  TODO: fix the responsivness 
-           *  FIXME: not re-sizing when becoming smaller
-          */}
           <div className="more" style={{maxWidth: '800px'}}>
             <div style={{textAlign: 'left', margin: '1em'}}>
               <p>
@@ -62,7 +66,7 @@ const Connect = (props: Props) => {
                   <h2>Tell us more:</h2>
                 </label>
               </p>
-              <textarea name='more' rows={4} cols={60} /></div>
+              <textarea className={styles.textAreaInput} name='more' rows={4} cols={60} /></div>
           </div>
             <Button type="submit">Submit</Button>
           </form>          

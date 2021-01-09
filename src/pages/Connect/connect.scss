@@ -21,6 +21,10 @@
     align-items: baseline;
   }
 
+  .inner label{
+    font-size: large;
+  }
+
   .role{
       content: '';
   }
@@ -29,8 +33,31 @@
     margin: 1em;
   }
 
+  .textInput{
+      outline: none;
+      width: 15em;
+      line-height: 2em;
+      border: none;
+      border-radius: .5em;
+      font-size: large;
+      padding-left: .5em;
+  }
+
+  .textInput::placeholder {
+    color: #B0BEC5;
+  }
+
+  .textAreaInput{
+    outline: none;
+    line-height: 2em;
+    border: none;
+    border-radius: .5em;
+    font-size: large;
+    padding-left: .5em;
+}
+
   
-  @media screen and (min-width: 769px) {
+  @include md() {
     .connect .inner {
       width: 80%;
       margin-bottom: 5em;
@@ -44,8 +71,13 @@
       flex-wrap: wrap;
       max-width: 900px;
     }
+
+    // .textInput{
+    //     line-height: 3em;
+    //     width: 20em;
+    // }
   }
-  @media screen and (min-width: 1025px) {
+  @include lg() {
     .connect .inner {
       width: 65%;
       margin-bottom: 5em;
@@ -62,4 +94,5 @@
     .inner form{
         margin-bottom: 2em;
     }
+
   }
